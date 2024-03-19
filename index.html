@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="icon" type="image/png" href="lista-de-afazeres.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+        <main>
+            <div>
+                <h1 class="title">Tarefas do dia <span id="dia"></span>/<span id="mes"></span></h1>
+                <ul id="list">
+                </ul>
+            </div>
+            <div>
+                <input type="text" id="task_name" name="task_name" placeholder="Nome da Tarefa">
+                <button class="add-task-button" onclick="addNewTask()">Adionar</button>
+                <button class="clear-task-button" onclick="clearList()">Limpar Tarefas</button>
+            </div>
+        </main>
+</body>
+</html>
