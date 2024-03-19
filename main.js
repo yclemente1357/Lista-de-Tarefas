@@ -1,17 +1,17 @@
-function addNewTask(){
+function addNewTask() {
     var list = document.getElementById("list");
     var text = document.getElementById("task_name").value;
 
-    if(text.length === 0){
+    if (text.length === 0) {
         alert('Tarefa precisa de ter mais de 1 caracter');
-        return; 
+        return;
     }
     var listItem = document.createElement("li");
     listItem.className = "list-item"
-    
+
 
     const textElement = document.createTextNode(text)
-    
+
     list.appendChild(listItem)
     listItem.appendChild(textElement)
 
@@ -28,7 +28,7 @@ function clearList() {
 }
 
 // Configurando o campo do dia 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var data = new Date();
     document.getElementById("dia").innerHTML = data.getDate();
     document.getElementById("mes").innerHTML = data.getMonth() + 1;
